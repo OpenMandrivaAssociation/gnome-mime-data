@@ -16,7 +16,6 @@ Patch3:		gnome-mime-data-2.3.1-gdesklet.patch
 URL:		http://www.gnome.org/
 BuildRequires:	perl-XML-Parser
 Conflicts:	gnome-vfs < 1.0.5-2mdk
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildArch:	noarch
 
 %description
