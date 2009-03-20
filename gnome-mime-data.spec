@@ -12,7 +12,7 @@ Patch1:		gnome-mime-data-2.4.1-openoffice.patch
 # (fc) 2.2.0-2mdk fix default applications (Mdk bug 1505) (rawhide)
 Patch2:		gnome-mime-data-2.4.2-default-applications.patch
 # (fc) 2.3.1-2mdk add gdesklet magic detection (Mdk bug 4790)
-Patch3:		gnome-mime-data-2.3.1-gdesklet.patch
+Patch3:		gnome-mime-data-2.18.0-gdesklet.patch
 URL:		http://www.gnome.org/
 BuildRequires:	perl-XML-Parser
 Conflicts:	gnome-vfs < 1.0.5-2mdk
@@ -31,8 +31,7 @@ types for a GNOME system.
 %patch3 -p1 -b .gdesklet
 
 %build
-./configure --prefix=%_prefix --sysconfdir=%_sysconfdir
-
+%configure2_5x --build=%_host
 %make
 
 %install
