@@ -1,0 +1,11 @@
+--- gnome-mime-data-2.4.1/gnome-vfs.keys.in.html	2003-12-22 20:05:12.000000000 +0100
++++ gnome-mime-data-2.4.1/gnome-vfs.keys.in	2004-03-16 14:49:31.461641680 +0100
+@@ -1836,7 +1836,7 @@
+ 	_description=HTML page
+ 	default_action_type=application
+ 	default_application_id=epiphany
+-	short_list_component_iids=OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:Nautilus_Text_View
++	short_list_component_iids=OAFIID:GNOME_Epiphany_NautilusView,OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:GNOME_Galeon_NautilusView,OAFIID:nautilus_gtkhtml_view:9f3bc757-146b-42fb-8489-7a6fdb030e43,OAFIID:Nautilus_Text_View
+ 	short_list_component_iids_for_novice_user_level=OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437

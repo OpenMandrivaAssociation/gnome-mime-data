@@ -1,0 +1,50 @@
+--- gnome-mime-data-2.4.1/gnome-vfs.keys.in.ooo	2004-09-02 14:49:59.978040284 +0200
++++ gnome-mime-data-2.4.1/gnome-vfs.keys.in	2004-09-02 14:50:50.685227593 +0200
+@@ -29,9 +29,18 @@
+ application/msword
+ 	_description=Microsoft Word document
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=abiword,openoffice,staroffice,applix
+-	short_list_application_ids_for_intermediate_user_level=abiword,openoffice,staroffice,applix
+-	short_list_application_ids_for_advanced_user_level=abiword,openoffice,staroffice,applix
++	short_list_application_ids_for_novice_user_level=openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_intermediate_user_level=openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_advanced_user_level=openoffice,abiword,staroffice,applix
++	_category=Documents/Word Processor
++	use_category_default=yes
++
++application/vnd.ms-word
++	_description=Microsoft Word document
++	default_action_type=application
++	short_list_application_ids_for_novice_user_level=openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_intermediate_user_level=openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_advanced_user_level=openoffice,abiword,staroffice,applix
+ 	_category=Documents/Word Processor
+ 	use_category_default=yes
+ 
+@@ -113,9 +122,9 @@
+ application/rtf
+ 	_description=Rich text document
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=abiword,openoffice,staroffice,applix
+-	short_list_application_ids_for_intermediate_user_level=abiword,openoffice,staroffice,applix
+-	short_list_application_ids_for_advanced_user_level=abiword,openoffice,staroffice,applix
++	short_list_application_ids_for_novice_user_level=openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_intermediate_user_level=openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_advanced_user_level=openoffice,abiword,staroffice,applix
+ 	_category=Documents/Word Processor
+ 	use_category_default=yes
+ 
+@@ -137,9 +146,9 @@
+ 	_description=Microsoft Excel spreadsheet
+ 	icon_filename=i-spreadsheet
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=gnumeric,openoffice,staroffice,applix
+-	short_list_application_ids_for_intermediate_user_level=gnumeric,openoffice,staroffice,applix
+-	short_list_application_ids_for_advanced_user_level=gnumeric,openoffice,staroffice,applix
++	short_list_application_ids_for_novice_user_level=openoffice,gnumeric,staroffice,applix
++	short_list_application_ids_for_intermediate_user_level=openoffice,gnumeric,staroffice,applix
++	short_list_application_ids_for_advanced_user_level=openoffice,gnumeric,staroffice,applix
+ 	_category=Documents/Spreadsheet
+ 	use_category_default=yes
+ 

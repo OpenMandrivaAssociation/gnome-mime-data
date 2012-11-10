@@ -1,0 +1,10 @@
+--- gnome-mime-data-2.18.0/gnome-vfs-mime-magic.gdesklet	2007-04-03 19:24:30.000000000 +0200
++++ gnome-mime-data-2.18.0/gnome-vfs-mime-magic	2009-03-20 03:49:56.000000000 +0100
+@@ -147,6 +147,7 @@
+ 0:64	string		\<dia:diagram				application/x-dia-diagram
+ 0:64	string		\<abiword				application/x-abiword
+ 0:64	string		\<\!DOCTYPE\ abiword			application/x-abiword
++0:128   string		\<display				application/x-gdesklets-display
+ 0:64	string		gmr:Workbook				application/x-gnumeric
+ 0:64	string		\<project				application/x-mrproject
+ # text/xml content detection needs to be after all the xml-derived formats
