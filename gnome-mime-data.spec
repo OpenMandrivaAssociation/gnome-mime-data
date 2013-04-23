@@ -1,7 +1,7 @@
 Name:		gnome-mime-data
 Summary:	The GNOME virtual file-system libraries
 Version:	2.18.0
-Release:	%mkrel 9
+Release:	10
 License:	GPL+
 Group:		System/Libraries
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
@@ -13,10 +13,13 @@ Patch1:		gnome-mime-data-2.4.1-openoffice.patch
 Patch2:		gnome-mime-data-2.4.2-default-applications.patch
 # (fc) 2.3.1-2mdk add gdesklet magic detection (Mdk bug 4790)
 Patch3:		gnome-mime-data-2.18.0-gdesklet.patch
+# Use libreoffice (preferred to openoffice) for its types
+Patch4:		gnome-mime-data-2.18.0-libreoffice.patch
+# Use xdg-open for mostly anything so KDE users get their preferred application too
+Patch5:		gnome-mime-data-2.18.0-xdg-open.patch
 URL:		http://www.gnome.org/
 BuildRequires:	perl-XML-Parser
 Conflicts:	gnome-vfs < 1.0.5-2mdk
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildArch:	noarch
 
 %description
@@ -25,10 +28,7 @@ types for a GNOME system.
 
 %prep
 %setup -q
-%patch0 -p1 -b .html
-%patch1 -p1 -b .ooo
-%patch2 -p1 -b .defaultapp
-%patch3 -p1 -b .gdesklet
+%apply_patches
 
 %build
 %configure2_5x --build=%_host

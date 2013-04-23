@@ -1,0 +1,438 @@
+--- gnome-mime-data-2.18.0/gnome-vfs.keys.in.bero	2013-04-23 19:07:25.240485902 +0200
++++ gnome-mime-data-2.18.0/gnome-vfs.keys.in	2013-04-23 19:09:08.089200116 +0200
+@@ -27,19 +27,19 @@ application/mime-type-test
+ application/msword
+ 	_description=Microsoft Word document
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,abiword,staroffice,applix
+-	short_list_application_ids_for_intermediate_user_level=openoffice,abiword,staroffice,applix
+-	short_list_application_ids_for_advanced_user_level=openoffice,abiword,staroffice,applix
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,abiword,staroffice,applix
+ 	_category=Documents/Word Processor
+ 	use_category_default=yes
+ 
+ application/vnd.ms-word
+ 	_description=Microsoft Word document
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=openoffice,abiword,staroffice,applix
+-	short_list_application_ids_for_intermediate_user_level=openoffice,abiword,staroffice,applix
+-	short_list_application_ids_for_advanced_user_level=openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,abiword,staroffice,applix
+ 	_category=Documents/Word Processor
+ 	use_category_default=yes
+ 
+@@ -124,10 +124,10 @@ application/qif
+ application/rtf
+ 	_description=Rich text document
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,abiword,staroffice,applix
+-	short_list_application_ids_for_intermediate_user_level=openoffice,abiword,staroffice,applix
+-	short_list_application_ids_for_advanced_user_level=openoffice,abiword,staroffice,applix
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,abiword,staroffice,applix
+ 	_category=Documents/Word Processor
+ 	use_category_default=yes
+ 
+@@ -149,20 +149,20 @@ application/vnd.ms-excel
+ 	_description=Microsoft Excel spreadsheet
+ 	icon_filename=i-spreadsheet
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,gnumeric,staroffice,applix
+-	short_list_application_ids_for_intermediate_user_level=openoffice,gnumeric,staroffice,applix
+-	short_list_application_ids_for_advanced_user_level=openoffice,gnumeric,staroffice,applix
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,gnumeric,staroffice,applix
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,gnumeric,staroffice,applix
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,gnumeric,staroffice,applix
+ 	_category=Documents/Spreadsheet
+ 	use_category_default=yes
+ 
+ application/vnd.ms-powerpoint
+ 	_description=Microsoft PowerPoint document
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents/Presentation
+ 	use_category_default=yes
+ 
+@@ -181,70 +181,70 @@ application/vnd.rn-realmedia
+ application/vnd.stardivision.calc
+ 	_description=StarCalc spreadsheet
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents/Spreadsheet
+ 	use_category_default=yes
+ 
+ application/vnd.stardivision.chart
+ 	_description=StarChart chart
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents
+ 	use_category_default=no
+ 
+ application/vnd.stardivision.draw
+ 	_description=StarDraw drawing
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents
+ 	use_category_default=no
+ 
+ application/vnd.stardivision.impress
+ 	_description=StarImpress presentation
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents/Presentation
+ 	use_category_default=yes
+ 
+ application/vnd.stardivision.mail
+ 	_description=StarMail file
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents
+ 	use_category_default=no
+ 
+ application/vnd.stardivision.math
+ 	_description=StarMath document
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents/Numeric
+ 	use_category_default=no
+ 
+ application/vnd.stardivision.writer
+ 	_description=StarWriter document
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents/Word Processor
+ 	use_category_default=yes
+ 
+@@ -253,100 +253,100 @@ application/vnd.stardivision.writer
+ application/vnd.sun.xml.calc
+ 	_description=OpenOffice.org spreadsheet
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents/Spreadsheet
+ 	use_category_default=yes
+ 
+ application/vnd.sun.xml.calc.template
+ 	_description=OpenOffice.org spreadsheet template
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents/Spreadsheet
+ 	use_category_default=yes
+ 
+ application/vnd.sun.xml.draw
+ 	_description=OpenOffice.org drawing
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents
+ 	use_category_default=no
+ 
+ application/vnd.sun.xml.draw.template
+ 	_description=OpenOffice.org drawing template
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents
+ 	use_category_default=no
+ 
+ application/vnd.sun.xml.impress
+ 	_description=OpenOffice.org Impress presentation
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents/Presentation
+ 	use_category_default=yes
+ 
+ application/vnd.sun.xml.impress.template
+ 	_description=OpenOffice.org Impress presentation template
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents/Presentation
+ 	use_category_default=yes
+ 
+ application/vnd.sun.xml.math
+ 	_description=OpenOffice.org Math document
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents
+ 	use_category_default=no
+ 
+ application/vnd.sun.xml.writer
+ 	_description=OpenOffice.org Writer document
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents/Word Processor
+ 	use_category_default=yes
+ 
+ application/vnd.sun.xml.writer.global
+ 	_description=OpenOffice.org Writer global document
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents/Word Processor
+ 	use_category_default=yes
+ 
+ application/vnd.sun.xml.writer.template
+ 	_description=OpenOffice.org Writer template
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 	_category=Documents/Word Processor
+ 	use_category_default=yes
+ 
+@@ -355,9 +355,9 @@ application/x-abiword
+ 	_description=AbiWord document
+ 	default_action_type=application
+ 	default_application_id=abiword
+-	short_list_application_ids_for_novice_user_level=abiword,openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=abiword,openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=abiword,openoffice,staroffice
++	short_list_application_ids_for_novice_user_level=abiword,libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=abiword,libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=abiword,libreoffice,openoffice,staroffice
+ 	_category=Documents/Word Processor
+ 	use_category_default=yes
+ 
+@@ -1536,9 +1536,9 @@ image/x-dpx
+ image/x-emf
+ 	_description=StarOffice extended metafile image
+ 	_category=Images
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 
+ image/x-fits
+ 	_description=Flexible Image Transport System
+@@ -1615,23 +1615,23 @@ image/x-palm
+ image/x-pcx
+ 	_description=PC Paintbrush image
+ 	_category=Images
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice,gimp
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice,gimp
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice,gimp
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice,gimp
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice,gimp
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice,gimp
+ 
+ image/x-photo-cd
+ 	_description=Photo CD image
+ 	_category=Images
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 
+ image/x-pict
+ 	_description=PICT image
+ 	_category=Images
+-	short_list_application_ids_for_novice_user_level=openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=openoffice,staroffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
+ 
+ # also image/png
+ image/x-png
+@@ -1738,10 +1738,10 @@ image/x-tga
+ image/x-wmf
+ 	_description=Windows metafile graphics
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,killustrator
+-	short_list_application_ids_for_intermediate_user_level=openoffice,killustrator
+-	short_list_application_ids_for_advanced_user_level=openoffice,killustrator
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,killustrator
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,killustrator
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,killustrator
+ 	_category=Images
+ 
+ image/x-xbitmap
+@@ -1871,18 +1871,18 @@ text/*
+ 	short_list_component_iids_for_novice_user_level=OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+-	short_list_application_ids_for_novice_user_level=gedit,pico,openoffice
+-	short_list_application_ids_for_intermediate_user_level=xemacs,emacs,nedit,gedit,xfte,pico,openoffice
+-	short_list_application_ids_for_advanced_user_level=xemacs,gvim,emacs,vim,vi,nedit,gedit,xfte,pico,openoffice
++	short_list_application_ids_for_novice_user_level=gedit,pico,libreoffice,openoffice
++	short_list_application_ids_for_intermediate_user_level=xemacs,emacs,nedit,gedit,xfte,pico,libreoffice,openoffice
++	short_list_application_ids_for_advanced_user_level=xemacs,gvim,emacs,vim,vi,nedit,gedit,xfte,pico,libreoffice,openoffice
+ 	_category=Documents/Plain Text
+ 
+ # also application/x-abiword
+ text/abiword
+ 	_description=AbiWord document
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=abiword,openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=abiword,openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=abiword,openoffice,staroffice
++	short_list_application_ids_for_novice_user_level=abiword,libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=abiword,libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=abiword,libreoffice,openoffice,staroffice
+ 	_category=Documents/Word Processor
+ 	use_category_default=yes
+ 
+@@ -1944,8 +1944,8 @@ text/plain
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_application_ids_for_novice_user_level=gedit,pico
+-	short_list_application_ids_for_intermediate_user_level=xemacs,emacs,nedit,gedit,xfte,pico,openoffice
+-	short_list_application_ids_for_advanced_user_level=xemacs,gvim,emacs,vim,vi,nedit,gedit,xfte,pico,openoffice
++	short_list_application_ids_for_intermediate_user_level=xemacs,emacs,nedit,gedit,xfte,pico,libreoffice,openoffice
++	short_list_application_ids_for_advanced_user_level=xemacs,gvim,emacs,vim,vi,nedit,gedit,xfte,pico,libreoffice,openoffice
+ 	_category=Documents/Plain Text
+ 	use_category_default=yes
+ 
+@@ -2011,10 +2011,10 @@ text/x-comma-separated-values
+ 	_description=Comma-separated text document
+ 	icon_filename=i-spreadsheet
+ 	default_action_type=application
+-	default_application_id=openoffice
+-	short_list_application_ids_for_novice_user_level=openoffice,gnumeric,kspread
+-	short_list_application_ids_for_intermediate_user_level=openoffice,gnumeric,kspread
+-	short_list_application_ids_for_advanced_user_level=openoffice,gnumeric,kspread
++	default_application_id=libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,gnumeric,kspread
++	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,gnumeric,kspread
++	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,gnumeric,kspread
+ 	_category=Documents/Spreadsheet
+ 	use_category_default=yes
+ 

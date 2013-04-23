@@ -1,0 +1,1264 @@
+--- gnome-mime-data-2.18.0/gnome-vfs.keys.in.bero	2013-04-23 19:10:07.304459823 +0200
++++ gnome-mime-data-2.18.0/gnome-vfs.keys.in	2013-04-23 23:59:18.372541622 +0200
+@@ -28,18 +28,18 @@ application/msword
+ 	_description=Microsoft Word document
+ 	default_action_type=application
+ 	default_application_id=libreoffice,openoffice
+-	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,abiword,staroffice,applix
+-	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,abiword,staroffice,applix
+-	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_novice_user_level=xdg-open,libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_intermediate_user_level=xdg-open,libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_advanced_user_level=xdg-open,libreoffice,openoffice,abiword,staroffice,applix
+ 	_category=Documents/Word Processor
+ 	use_category_default=yes
+ 
+ application/vnd.ms-word
+ 	_description=Microsoft Word document
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,abiword,staroffice,applix
+-	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,abiword,staroffice,applix
+-	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_novice_user_level=xdg-open,libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_intermediate_user_level=xdg-open,libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_advanced_user_level=xdg-open,libreoffice,openoffice,abiword,staroffice,applix
+ 	_category=Documents/Word Processor
+ 	use_category_default=yes
+ 
+@@ -55,9 +55,9 @@ application/ogg
+ 	_description=Ogg audio
+ 	default_action_type=application
+ 	default_application_id=rhythmbox
+-	short_list_application_ids_for_novice_user_level=rhythmbox,totem,xmms,freeamp
+-	short_list_application_ids_for_intermediate_user_level=rhythmbox,totem,xmms,freeamp
+-	short_list_application_ids_for_advanced_user_level=rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_novice_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_advanced_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
+ 	_category=Audio
+ 	use_category_default=no
+ 
+@@ -68,9 +68,9 @@ application/pdf
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_PDF_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_PDF_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_PDF_Control
+-	short_list_application_ids_for_novice_user_level=acroread,gpdf,xpdf,ggv,gv
+-	short_list_application_ids_for_intermediate_user_level=acroread,gpdf,xpdf,ggv,gv
+-	short_list_application_ids_for_advanced_user_level=acroread,gpdf,xpdf,ggv,gv
++	short_list_application_ids_for_novice_user_level=xdg-open,acroread,gpdf,xpdf,ggv,gv
++	short_list_application_ids_for_intermediate_user_level=xdg-open,acroread,gpdf,xpdf,ggv,gv
++	short_list_application_ids_for_advanced_user_level=xdg-open,acroread,gpdf,xpdf,ggv,gv
+ 	_category=Documents/Published Materials
+ 	use_category_default=yes
+ 
+@@ -106,9 +106,9 @@ application/postscript
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_GGV_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_GGV_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_GGV_Control
+-	short_list_application_ids_for_novice_user_level=ggv,gv,ghostview
+-	short_list_application_ids_for_intermediate_user_level=ggv,gv,ghostview
+-	short_list_application_ids_for_advanced_user_level=ggv,gv,ghostview
++	short_list_application_ids_for_novice_user_level=xdg-open,ggv,gv,ghostview
++	short_list_application_ids_for_intermediate_user_level=xdg-open,ggv,gv,ghostview
++	short_list_application_ids_for_advanced_user_level=xdg-open,ggv,gv,ghostview
+ 	_category=Documents/Published Materials
+ 	use_category_default=yes
+ 
+@@ -125,9 +125,9 @@ application/rtf
+ 	_description=Rich text document
+ 	default_action_type=application
+ 	default_application_id=libreoffice,openoffice
+-	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,abiword,staroffice,applix
+-	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,abiword,staroffice,applix
+-	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_novice_user_level=xdg-open,libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_intermediate_user_level=xdg-open,libreoffice,openoffice,abiword,staroffice,applix
++	short_list_application_ids_for_advanced_user_level=xdg-open,libreoffice,openoffice,abiword,staroffice,applix
+ 	_category=Documents/Word Processor
+ 	use_category_default=yes
+ 
+@@ -150,9 +150,9 @@ application/vnd.ms-excel
+ 	icon_filename=i-spreadsheet
+ 	default_action_type=application
+ 	default_application_id=libreoffice,openoffice
+-	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,gnumeric,staroffice,applix
+-	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,gnumeric,staroffice,applix
+-	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,gnumeric,staroffice,applix
++	short_list_application_ids_for_novice_user_level=xdg-open,libreoffice,openoffice,gnumeric,staroffice,applix
++	short_list_application_ids_for_intermediate_user_level=xdg-open,libreoffice,openoffice,gnumeric,staroffice,applix
++	short_list_application_ids_for_advanced_user_level=xdg-open,libreoffice,openoffice,gnumeric,staroffice,applix
+ 	_category=Documents/Spreadsheet
+ 	use_category_default=yes
+ 
+@@ -160,9 +160,9 @@ application/vnd.ms-powerpoint
+ 	_description=Microsoft PowerPoint document
+ 	default_action_type=application
+ 	default_application_id=libreoffice,openoffice
+-	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_novice_user_level=xdg-open,libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=xdg-open,libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=xdg-open,libreoffice,openoffice,staroffice
+ 	_category=Documents/Presentation
+ 	use_category_default=yes
+ 
+@@ -172,9 +172,9 @@ application/vnd.rn-realmedia
+ 	icon_filename=gnome-audio-x-pn-realaudio
+ 	default_action_type=application
+ 	default_application_id=totem
+-	short_list_application_ids_for_novice_user_level=totem,realplayer
+-	short_list_application_ids_for_intermediate_user_level=totem,realplayer
+-	short_list_application_ids_for_advanced_user_level=totem,realplayer
++	short_list_application_ids_for_novice_user_level=xdg-open,totem,realplayer
++	short_list_application_ids_for_intermediate_user_level=xdg-open,totem,realplayer
++	short_list_application_ids_for_advanced_user_level=xdg-open,totem,realplayer
+ 	_category=Video
+ 	use_category_default=no
+ 
+@@ -399,9 +399,9 @@ application/x-arj
+ 	_description=ARJ archive
+ 	icon_filename=gnome-compressed
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -429,9 +429,9 @@ application/x-bzip
+ 	_description=Bzip2 compressed file
+ 	vfs_method=bzip2
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -440,9 +440,9 @@ application/x-bzip-compressed-tar
+ 	icon_filename=gnome-compressed
+ 	vfs_method=bzip2
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -451,9 +451,9 @@ application/x-bzip2
+ 	vfs_method=bzip2
+ 	icon_filename=gnome-compressed
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -478,9 +478,9 @@ application/x-compress
+ 	_description=Compress-compressed file
+ 	icon_filename=gnome-compressed
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -488,9 +488,9 @@ application/x-compressed-tar
+ 	_description=Tar archive (Gzip-compressed)
+ 	icon_filename=gnome-package
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -538,9 +538,9 @@ application/x-dia-diagram
+ 
+ application/x-dvi
+ 	_description=TeX dvi document
+-	short_list_application_ids_for_novice_user_level=xdvi
+-	short_list_application_ids_for_intermediate_user_level=xdvi
+-	short_list_application_ids_for_advanced_user_level=xdvi
++	short_list_application_ids_for_novice_user_level=xdg-open,xdvi
++	short_list_application_ids_for_intermediate_user_level=xdg-open,xdvi
++	short_list_application_ids_for_advanced_user_level=xdg-open,xdvi
+ 	_category=Documents/Published Materials
+ 	use_category_default=no
+ 
+@@ -558,9 +558,9 @@ application/x-executable-binary
+ application/x-flac
+ 	_description=FLAC audio
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=gst-player
+-	short_list_application_ids_for_intermediate_user_level=gst-player
+-	short_list_application_ids_for_advanced_user_level=gst-player
++	short_list_application_ids_for_novice_user_level=xdg-open,gst-player
++	short_list_application_ids_for_intermediate_user_level=xdg-open,gst-player
++	short_list_application_ids_for_advanced_user_level=xdg-open,gst-player
+ 	_category=Audio
+ 	use_category_default=no
+ 
+@@ -692,9 +692,9 @@ application/x-gtar
+ 	_description=Gtar archive
+ 	icon_filename=gnome-package
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -710,9 +710,9 @@ application/x-gzip
+ 	_description=Gzip-compressed file
+ 	vfs_method=gzip
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -790,9 +790,9 @@ application/x-lha
+ 	_description=LHARC archive
+ 	icon_filename=gnome-compressed
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -800,9 +800,9 @@ application/x-lhz
+ 	_description=LHA archive
+ 	icon_filename=gnome-compressed
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -877,9 +877,9 @@ application/x-ogg
+ 	_description=Ogg audio
+ 	default_action_type=application
+ 	default_application_id=rhythmbox
+-	short_list_application_ids_for_novice_user_level=rhythmbox,totem,xmms,freeamp
+-	short_list_application_ids_for_intermediate_user_level=rhythmbox,totem,xmms,freeamp
+-	short_list_application_ids_for_advanced_user_level=rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_novice_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_advanced_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
+ 	_category=Audio
+ 	use_category_default=no
+ 
+@@ -932,9 +932,9 @@ application/x-qw
+ application/x-rar
+ 	_description=RAR archive
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -943,9 +943,9 @@ application/x-rar-compressed
+ 	_description=RAR archive
+ 	icon_filename=gnome-package
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -1012,9 +1012,9 @@ application/x-tar
+ 	icon_filename=gnome-package
+ 	vfs_method=tar
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -1075,9 +1075,9 @@ application/x-zip
+ 	icon_filename=gnome-compressed
+ 	vfs_method=zip
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -1086,9 +1086,9 @@ application/x-zip-compressed
+ 	icon_filename=gnome-compressed
+ 	vfs_method=zip
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -1101,9 +1101,9 @@ application/zip
+ 	icon_filename=gnome-compressed
+ 	vfs_method=zip
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -1111,9 +1111,9 @@ audio/ac3
+ 	_description=Dolby Digital audio
+ 	icon_filename=i-music
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=omsomi
+-	short_list_application_ids_for_intermediate_user_level=omsomi
+-	short_list_application_ids_for_advanced_user_level=omsomi
++	short_list_application_ids_for_novice_user_level=xdg-open,omsomi
++	short_list_application_ids_for_intermediate_user_level=xdg-open,omsomi
++	short_list_application_ids_for_advanced_user_level=xdg-open,omsomi
+ 	_category=Audio
+ 
+ audio/basic
+@@ -1127,9 +1127,9 @@ audio/mpeg
+ 	icon_filename=i-music
+ 	default_action_type=application
+ 	default_application_id=rhythmbox
+-	short_list_application_ids_for_novice_user_level=rhythmbox,totem,xmms,freeamp
+-	short_list_application_ids_for_intermediate_user_level=rhythmbox,totem,xmms,freeamp
+-	short_list_application_ids_for_advanced_user_level=rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_novice_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_advanced_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
+ 	_category=Audio
+ 
+ audio/prs.sid
+@@ -1147,26 +1147,26 @@ audio/x-aifc
+ audio/x-aiff
+ 	_description=AIFF audio
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=grecord
+-	short_list_application_ids_for_intermediate_user_level=grecord
+-	short_list_application_ids_for_advanced_user_level=grecord
++	short_list_application_ids_for_novice_user_level=xdg-open,grecord
++	short_list_application_ids_for_intermediate_user_level=xdg-open,grecord
++	short_list_application_ids_for_advanced_user_level=xdg-open,grecord
+ 	_category=Audio
+ 
+ audio/x-aiffc
+ 	_description=AIFF audio
+ 	icon_filename=gnome-audio-x-aiff
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=grecord
+-	short_list_application_ids_for_intermediate_user_level=grecord
+-	short_list_application_ids_for_advanced_user_level=grecord
++	short_list_application_ids_for_novice_user_level=xdg-open,grecord
++	short_list_application_ids_for_intermediate_user_level=xdg-open,grecord
++	short_list_application_ids_for_advanced_user_level=xdg-open,grecord
+ 	_category=Audio
+ 
+ audio/x-flac
+ 	_description=FLAC audio
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=gst-player
+-	short_list_application_ids_for_intermediate_user_level=gst-player
+-	short_list_application_ids_for_advanced_user_level=gst-player
++	short_list_application_ids_for_novice_user_level=xdg-open,gst-player
++	short_list_application_ids_for_intermediate_user_level=xdg-open,gst-player
++	short_list_application_ids_for_advanced_user_level=xdg-open,gst-player
+ 	_category=Audio
+ 	use_category_default=yes
+ 
+@@ -1189,9 +1189,9 @@ audio/x-mod
+ 	_description=MOD audio
+ 	icon_filename=gnome-audio-x-mod
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=soundtracker
+-	short_list_application_ids_for_intermediate_user_level=soundtracker
+-	short_list_application_ids_for_advanced_user_level=soundtracker
++	short_list_application_ids_for_novice_user_level=xdg-open,soundtracker
++	short_list_application_ids_for_intermediate_user_level=xdg-open,soundtracker
++	short_list_application_ids_for_advanced_user_level=xdg-open,soundtracker
+ 	_category=Audio
+ 
+ audio/x-mp3
+@@ -1199,9 +1199,9 @@ audio/x-mp3
+ 	icon_filename=i-music
+ 	default_action_type=application
+ 	default_application_id=rhythmbox
+-	short_list_application_ids_for_novice_user_level=rhythmbox,totem,xmms,freeamp
+-	short_list_application_ids_for_intermediate_user_level=rhythmbox,totem,xmms,freeamp
+-	short_list_application_ids_for_advanced_user_level=rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_novice_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_advanced_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
+ 	_category=Audio
+ 
+ audio/x-mp3-playlist
+@@ -1209,9 +1209,9 @@ audio/x-mp3-playlist
+ 	icon_filename=i-music
+ 	default_action_type=application
+ 	default_application_id=totem
+-	short_list_application_ids_for_novice_user_level=totem,rhythmbox,xmms-no-uris,freeamp-no-uris
+-	short_list_application_ids_for_intermediate_user_level=totem,rhythmbox,xmms-no-uris,freeamp-no-uris
+-	short_list_application_ids_for_advanced_user_level=totem,rhythmbox,xmms-no-uris,freeamp-no-uris
++	short_list_application_ids_for_novice_user_level=xdg-open,totem,rhythmbox,xmms-no-uris,freeamp-no-uris
++	short_list_application_ids_for_intermediate_user_level=xdg-open,totem,rhythmbox,xmms-no-uris,freeamp-no-uris
++	short_list_application_ids_for_advanced_user_level=xdg-open,totem,rhythmbox,xmms-no-uris,freeamp-no-uris
+ 	_category=Audio
+ 
+ # also audio/mpeg
+@@ -1220,18 +1220,18 @@ audio/x-mpeg
+ 	icon_filename=i-music
+ 	default_action_type=application
+ 	default_application_id=rhythmbox
+-	short_list_application_ids_for_novice_user_level=rhythmbox,totem,xmms,freeamp
+-	short_list_application_ids_for_intermediate_user_level=rhythmbox,totem,xmms,freeamp
+-	short_list_application_ids_for_advanced_user_level=rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_novice_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
++	short_list_application_ids_for_advanced_user_level=xdg-open,rhythmbox,totem,xmms,freeamp
+ 	_category=Audio
+ 
+ audio/x-mpegurl
+ 	_description=Playlist
+ 	default_action_type=application
+ 	default_application_id=totem
+-	short_list_application_ids_for_novice_user_level=totem,rhythmbox,xmms-no-uris,freeamp-no-uris
+-	short_list_application_ids_for_intermediate_user_level=totem,rhythmbox,xmms-no-uris,freeamp-no-uris
+-	short_list_application_ids_for_advanced_user_level=totem,rhythmbox,xmms-no-uris,freeamp-no-uris
++	short_list_application_ids_for_novice_user_level=xdg-open,totem,rhythmbox,xmms-no-uris,freeamp-no-uris
++	short_list_application_ids_for_intermediate_user_level=xdg-open,totem,rhythmbox,xmms-no-uris,freeamp-no-uris
++	short_list_application_ids_for_advanced_user_level=xdg-open,totem,rhythmbox,xmms-no-uris,freeamp-no-uris
+ 	_category=Audio
+ 
+ audio/x-ms-asf
+@@ -1257,9 +1257,9 @@ audio/x-pn-realaudio
+ 	_description=RealAudio document
+ 	default_action_type=application
+ 	default_application_id=totem
+-	short_list_application_ids_for_novice_user_level=totem,realplayer
+-	short_list_application_ids_for_intermediate_user_level=totem,realplayer
+-	short_list_application_ids_for_advanced_user_level=totem,realplayer
++	short_list_application_ids_for_novice_user_level=xdg-open,totem,realplayer
++	short_list_application_ids_for_intermediate_user_level=xdg-open,totem,realplayer
++	short_list_application_ids_for_advanced_user_level=xdg-open,totem,realplayer
+ 	_category=Audio
+ 
+ audio/x-pn-wav
+@@ -1274,9 +1274,9 @@ audio/x-real-audio
+ 	icon_filename=gnome-audio-x-pn-realaudio
+ 	default_action_type=application
+ 	default_application_id=totem
+-	short_list_application_ids_for_novice_user_level=totem,realplayer
+-	short_list_application_ids_for_intermediate_user_level=totem,realplayer
+-	short_list_application_ids_for_advanced_user_level=totem,realplayer
++	short_list_application_ids_for_novice_user_level=xdg-open,totem,realplayer
++	short_list_application_ids_for_intermediate_user_level=xdg-open,totem,realplayer
++	short_list_application_ids_for_advanced_user_level=xdg-open,totem,realplayer
+ 	_category=Audio
+ 
+ audio/x-riff
+@@ -1284,9 +1284,9 @@ audio/x-riff
+ 	icon_filename=i-music
+ 	default_action_type=application
+ 	default_application_id=totem
+-	short_list_application_ids_for_novice_user_level=totem,xmms
+-	short_list_application_ids_for_intermediate_user_level=totem,xmms
+-	short_list_application_ids_for_advanced_user_level=totem,xmms
++	short_list_application_ids_for_novice_user_level=xdg-open,totem,xmms
++	short_list_application_ids_for_intermediate_user_level=xdg-open,totem,xmms
++	short_list_application_ids_for_advanced_user_level=xdg-open,totem,xmms
+ 	_category=Audio
+ 
+ audio/x-s3m
+@@ -1299,9 +1299,9 @@ audio/x-scpls
+ 	icon_filename=i-music
+ 	default_action_type=application
+ 	default_application_id=rhythmbox
+-	short_list_application_ids_for_novice_user_level=rhythmbox,totem,xmms-no-uris,freeamp-no-uris
+-	short_list_application_ids_for_intermediate_user_level=rhythmbox,totem,xmms-no-uris,freeamp-no-uris
+-	short_list_application_ids_for_advanced_user_level=rhythmbox,totem,xmms-no-uris,freeamp-no-uris
++	short_list_application_ids_for_novice_user_level=xdg-open,rhythmbox,totem,xmms-no-uris,freeamp-no-uris
++	short_list_application_ids_for_intermediate_user_level=xdg-open,rhythmbox,totem,xmms-no-uris,freeamp-no-uris
++	short_list_application_ids_for_advanced_user_level=xdg-open,rhythmbox,totem,xmms-no-uris,freeamp-no-uris
+ 
+ audio/x-stm
+ 	_description=Scream Tracker audio
+@@ -1311,26 +1311,26 @@ audio/x-ulaw
+ 	_description=Sun mu-law audio
+ 	icon_filename=gnome-audio-ulaw
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=grecord
+-	short_list_application_ids_for_intermediate_user_level=grecord
+-	short_list_application_ids_for_advanced_user_level=grecord
++	short_list_application_ids_for_novice_user_level=xdg-open,grecord
++	short_list_application_ids_for_intermediate_user_level=xdg-open,grecord
++	short_list_application_ids_for_advanced_user_level=xdg-open,grecord
+ 	_category=Audio
+ 
+ audio/x-voc
+ 	_description=VOC audio
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=grecord
+-	short_list_application_ids_for_intermediate_user_level=grecord
+-	short_list_application_ids_for_advanced_user_level=grecord
++	short_list_application_ids_for_novice_user_level=xdg-open,grecord
++	short_list_application_ids_for_intermediate_user_level=xdg-open,grecord
++	short_list_application_ids_for_advanced_user_level=xdg-open,grecord
+ 	_category=Audio
+ 
+ audio/x-wav
+ 	_description=Wave audio
+ 	default_action_type=application
+ 	default_application_id=grecord
+-	short_list_application_ids_for_novice_user_level=grecord,totem,xmms,freeamp
+-	short_list_application_ids_for_intermediate_user_level=grecord,totem,xmms,freeamp
+-	short_list_application_ids_for_advanced_user_level=grecord,totem,xmms,freeamp
++	short_list_application_ids_for_novice_user_level=xdg-open,grecord,totem,xmms,freeamp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,grecord,totem,xmms,freeamp
++	short_list_application_ids_for_advanced_user_level=xdg-open,grecord,totem,xmms,freeamp
+ 	_category=Audio
+ 
+ audio/x-xi
+@@ -1349,9 +1349,9 @@ image/bmp
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	_category=Images
+ 
+ image/cgm
+@@ -1361,9 +1361,9 @@ image/cgm
+ image/g3fax
+ 	_description=G3 fax image
+ 	_category=Images
+-	short_list_application_ids_for_novice_user_level=gimp
+-	short_list_application_ids_for_intermediate_user_level=gimp
+-	short_list_application_ids_for_advanced_user_level=gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,gimp
+ 
+ image/gif
+ 	_description=GIF image
+@@ -1373,9 +1373,9 @@ image/gif
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	_category=Images
+ 
+ image/ief
+@@ -1390,9 +1390,9 @@ image/jpeg
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	_category=Images
+ 
+ # also image/jpeg
+@@ -1403,9 +1403,9 @@ image/jpg
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	_category=Images
+ 
+ # also image/jpeg
+@@ -1416,9 +1416,9 @@ image/pjpeg
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	_category=Images
+ 
+ # also image/x-png
+@@ -1430,26 +1430,26 @@ image/png
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	_category=Images
+ 
+ image/svg
+ 	_description=SVG art
+ 	default_action_type=application
+ 	default_application_id=eog
+-	short_list_application_ids_for_novice_user_level=sodipodi
+-	short_list_application_ids_for_intermediate_user_level=sodipodi
+-	short_list_application_ids_for_advanced_user_level=sodipodi
++	short_list_application_ids_for_novice_user_level=xdg-open,sodipodi
++	short_list_application_ids_for_intermediate_user_level=xdg-open,sodipodi
++	short_list_application_ids_for_advanced_user_level=xdg-open,sodipodi
+ 	_category=Images
+ 
+ image/svg+xml
+ 	_description=SVG art
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=sodipodi
+-	short_list_application_ids_for_intermediate_user_level=sodipodi
+-	short_list_application_ids_for_advanced_user_level=sodipodi
++	short_list_application_ids_for_novice_user_level=xdg-open,sodipodi
++	short_list_application_ids_for_intermediate_user_level=xdg-open,sodipodi
++	short_list_application_ids_for_advanced_user_level=xdg-open,sodipodi
+ 	_category=Images
+ 
+ image/tiff
+@@ -1460,9 +1460,9 @@ image/tiff
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	_category=Images
+ 
+ image/vnd.djvu
+@@ -1503,9 +1503,9 @@ image/x-bmp
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	icon_filename=gnome-image-bmp
+ 	_category=Images
+ 
+@@ -1515,9 +1515,9 @@ image/x-cmu-raster
+ 
+ image/x-compressed-xcf
+ 	_description=Compressed GIMP document
+-	short_list_application_ids_for_novice_user_level=gimp
+-	short_list_application_ids_for_intermediate_user_level=gimp
+-	short_list_application_ids_for_advanced_user_level=gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,gimp
+ 	icon_filename=gnome-image-xcf
+ 	_category=Images
+ 
+@@ -1536,16 +1536,16 @@ image/x-dpx
+ image/x-emf
+ 	_description=StarOffice extended metafile image
+ 	_category=Images
+-	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_novice_user_level=xdg-open,libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=xdg-open,libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=xdg-open,libreoffice,openoffice,staroffice
+ 
+ image/x-fits
+ 	_description=Flexible Image Transport System
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=gimp
+-	short_list_application_ids_for_intermediate_user_level=gimp
+-	short_list_application_ids_for_advanced_user_level=gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,gimp
+ 	_category=Images
+ 
+ image/x-fpx
+@@ -1559,9 +1559,9 @@ image/x-gray
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	_category=Images
+ 
+ image/x-icb
+@@ -1571,9 +1571,9 @@ image/x-icb
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog
+-	short_list_application_ids_for_intermediate_user_level=eog
+-	short_list_application_ids_for_advanced_user_level=eog
++	short_list_application_ids_for_novice_user_level=xdg-open,eog
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog
+ 	_category=Images
+ 
+ image/x-ico
+@@ -1584,9 +1584,9 @@ image/x-ico
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog
+-	short_list_application_ids_for_intermediate_user_level=eog
+-	short_list_application_ids_for_advanced_user_level=eog
++	short_list_application_ids_for_novice_user_level=xdg-open,eog
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog
+ 
+ image/x-iff
+ 	_description=IFF image
+@@ -1615,23 +1615,23 @@ image/x-palm
+ image/x-pcx
+ 	_description=PC Paintbrush image
+ 	_category=Images
+-	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice,gimp
+-	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice,gimp
+-	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,libreoffice,openoffice,staroffice,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,libreoffice,openoffice,staroffice,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,libreoffice,openoffice,staroffice,gimp
+ 
+ image/x-photo-cd
+ 	_description=Photo CD image
+ 	_category=Images
+-	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_novice_user_level=xdg-open,libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=xdg-open,libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=xdg-open,libreoffice,openoffice,staroffice
+ 
+ image/x-pict
+ 	_description=PICT image
+ 	_category=Images
+-	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,staroffice
+-	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,staroffice
+-	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,staroffice
++	short_list_application_ids_for_novice_user_level=xdg-open,libreoffice,openoffice,staroffice
++	short_list_application_ids_for_intermediate_user_level=xdg-open,libreoffice,openoffice,staroffice
++	short_list_application_ids_for_advanced_user_level=xdg-open,libreoffice,openoffice,staroffice
+ 
+ # also image/png
+ image/x-png
+@@ -1641,9 +1641,9 @@ image/x-png
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	icon_filename=gnome-image-png
+ 	_category=Images
+ 
+@@ -1654,9 +1654,9 @@ image/x-portable-anymap
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	_category=Images
+ 
+ image/x-portable-bitmap
+@@ -1666,9 +1666,9 @@ image/x-portable-bitmap
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	icon_filename=gnome-image-pbm
+ 	_category=Images
+ 
+@@ -1679,9 +1679,9 @@ image/x-portable-graymap
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	_category=Images
+ 
+ image/x-portable-pixmap
+@@ -1691,18 +1691,18 @@ image/x-portable-pixmap
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	icon_filename=gnome-image-ppm
+ 	_category=Images
+ 
+ image/x-psd
+ 	_description=Photoshop document
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=eog,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,gimp
+ 	icon_filename=gnome-image-psd
+ 	_category=Images
+ 
+@@ -1714,61 +1714,61 @@ image/x-rgb
+ image/x-sgi
+ 	_description=Silicon Graphics image
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=gimp
+-	short_list_application_ids_for_intermediate_user_level=gimp
+-	short_list_application_ids_for_advanced_user_level=gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,gimp
+ 	_category=Images
+ 
+ image/x-sun-raster
+ 	_description=SUN Rasterfile
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=gimp
+-	short_list_application_ids_for_intermediate_user_level=gimp
+-	short_list_application_ids_for_advanced_user_level=gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,gimp
+ 	_category=Images
+ 
+ image/x-tga
+ 	_description=TarGA image
+ 	icon_filename=gnome-image-tga
+-	short_list_application_ids_for_novice_user_level=gimp
+-	short_list_application_ids_for_intermediate_user_level=gimp
+-	short_list_application_ids_for_advanced_user_level=gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,gimp
+ 	_category=Images
+ 
+ image/x-wmf
+ 	_description=Windows metafile graphics
+ 	default_action_type=application
+ 	default_application_id=libreoffice,openoffice
+-	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,killustrator
+-	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,killustrator
+-	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,killustrator
++	short_list_application_ids_for_novice_user_level=xdg-open,libreoffice,openoffice,killustrator
++	short_list_application_ids_for_intermediate_user_level=xdg-open,libreoffice,openoffice,killustrator
++	short_list_application_ids_for_advanced_user_level=xdg-open,libreoffice,openoffice,killustrator
+ 	_category=Images
+ 
+ image/x-xbitmap
+ 	_description=X bitmap image
+ 	default_action_type=application
+ 	default_application_id=eog
+-	short_list_application_ids_for_novice_user_level=eog,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,gimp
+ 	icon_filename=gnome-image-xbm
+ 	_category=Images
+ 
+ image/x-xcf
+ 	_description=GIMP document
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=gimp
+-	short_list_application_ids_for_intermediate_user_level=gimp
+-	short_list_application_ids_for_advanced_user_level=gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,gimp
+ 	icon_filename=gnome-image-xcf
+ 	_category=Images
+ 
+ image/x-xfig
+ 	_description=xfig vector graphic
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=xfig
+-	short_list_application_ids_for_intermediate_user_level=xfig
+-	short_list_application_ids_for_advanced_user_level=xfig
++	short_list_application_ids_for_novice_user_level=xdg-open,xfig
++	short_list_application_ids_for_intermediate_user_level=xdg-open,xfig
++	short_list_application_ids_for_advanced_user_level=xdg-open,xfig
+ 	_category=Images
+ 
+ image/x-xpixmap
+@@ -1778,17 +1778,17 @@ image/x-xpixmap
+ 	short_list_component_iids_for_novice_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:GNOME_EOG_Control
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:GNOME_EOG_Control
+-	short_list_application_ids_for_novice_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_intermediate_user_level=eog,electric_eyes,gimp
+-	short_list_application_ids_for_advanced_user_level=eog,electric_eyes,gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,eog,electric_eyes,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,eog,electric_eyes,gimp
+ 	_category=Images
+ 
+ image/x-xwindowdump
+ 	_description=X window image
+ 	icon_filename=gnome-image-xwd
+-	short_list_application_ids_for_novice_user_level=gimp
+-	short_list_application_ids_for_intermediate_user_level=gimp
+-	short_list_application_ids_for_advanced_user_level=gimp
++	short_list_application_ids_for_novice_user_level=xdg-open,gimp
++	short_list_application_ids_for_intermediate_user_level=xdg-open,gimp
++	short_list_application_ids_for_advanced_user_level=xdg-open,gimp
+ 	_category=Images
+ 
+ message/delivery-status
+@@ -1859,9 +1859,9 @@ multipart/x-zip
+ 	icon_filename=gnome-compressed
+ 	vfs_method=zip
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=file-roller
+-	short_list_application_ids_for_intermediate_user_level=file-roller
+-	short_list_application_ids_for_advanced_user_level=file-roller
++	short_list_application_ids_for_novice_user_level=xdg-open,file-roller
++	short_list_application_ids_for_intermediate_user_level=xdg-open,file-roller
++	short_list_application_ids_for_advanced_user_level=xdg-open,file-roller
+ 	_category=Packages
+ 	use_category_default=yes
+ 
+@@ -1871,9 +1871,9 @@ text/*
+ 	short_list_component_iids_for_novice_user_level=OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+-	short_list_application_ids_for_novice_user_level=gedit,pico,libreoffice,openoffice
+-	short_list_application_ids_for_intermediate_user_level=xemacs,emacs,nedit,gedit,xfte,pico,libreoffice,openoffice
+-	short_list_application_ids_for_advanced_user_level=xemacs,gvim,emacs,vim,vi,nedit,gedit,xfte,pico,libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=xdg-open,gedit,pico,libreoffice,openoffice
++	short_list_application_ids_for_intermediate_user_level=xdg-open,xemacs,emacs,nedit,gedit,xfte,pico,libreoffice,openoffice
++	short_list_application_ids_for_advanced_user_level=xdg-open,xemacs,gvim,emacs,vim,vi,nedit,gedit,xfte,pico,libreoffice,openoffice
+ 	_category=Documents/Plain Text
+ 
+ # also application/x-abiword
+@@ -1914,9 +1914,9 @@ text/html
+ 	short_list_component_iids_for_novice_user_level=OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+-	short_list_application_ids_for_novice_user_level=epiphany,galeon,mozilla,netscape
+-	short_list_application_ids_for_intermediate_user_level=epiphany,galeon,mozilla,netscape
+-	short_list_application_ids_for_advanced_user_level=epiphany,galeon,mozilla,netscape,lynx
++	short_list_application_ids_for_novice_user_level=xdg-open,epiphany,galeon,mozilla,netscape
++	short_list_application_ids_for_intermediate_user_level=xdg-open,epiphany,galeon,mozilla,netscape
++	short_list_application_ids_for_advanced_user_level=xdg-open,epiphany,galeon,mozilla,netscape,lynx
+ 	_category=Documents/World Wide Web
+ 	use_category_default=yes
+ 
+@@ -1943,9 +1943,9 @@ text/plain
+ 	short_list_component_iids_for_novice_user_level=OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+-	short_list_application_ids_for_novice_user_level=gedit,pico
+-	short_list_application_ids_for_intermediate_user_level=xemacs,emacs,nedit,gedit,xfte,pico,libreoffice,openoffice
+-	short_list_application_ids_for_advanced_user_level=xemacs,gvim,emacs,vim,vi,nedit,gedit,xfte,pico,libreoffice,openoffice
++	short_list_application_ids_for_novice_user_level=xdg-open,gedit,pico
++	short_list_application_ids_for_intermediate_user_level=xdg-open,xemacs,emacs,nedit,gedit,xfte,pico,libreoffice,openoffice
++	short_list_application_ids_for_advanced_user_level=xdg-open,xemacs,gvim,emacs,vim,vi,nedit,gedit,xfte,pico,libreoffice,openoffice
+ 	_category=Documents/Plain Text
+ 	use_category_default=yes
+ 
+@@ -1965,18 +1965,18 @@ text/spreadsheet
+ 	_description=Spreadsheet Interchange document
+ 	icon_filename=i-spreadsheet
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=gnumeric
+-	short_list_application_ids_for_intermediate_user_level=gnumeric
+-	short_list_application_ids_for_advanced_user_level=gnumeric
++	short_list_application_ids_for_novice_user_level=xdg-open,gnumeric
++	short_list_application_ids_for_intermediate_user_level=xdg-open,gnumeric
++	short_list_application_ids_for_advanced_user_level=xdg-open,gnumeric
+ 	_category=Documents/Spreadsheet
+ 	use_category_default=yes
+ 
+ text/tab-separated-values
+ 	_description=Tab-separated text document
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=gnumeric
+-	short_list_application_ids_for_intermediate_user_level=gnumeric
+-	short_list_application_ids_for_advanced_user_level=gnumeric
++	short_list_application_ids_for_novice_user_level=xdg-open,gnumeric
++	short_list_application_ids_for_intermediate_user_level=xdg-open,gnumeric
++	short_list_application_ids_for_advanced_user_level=xdg-open,gnumeric
+ 	_category=Documents/Spreadsheet
+ 	use_category_default=yes
+ 
+@@ -2012,9 +2012,9 @@ text/x-comma-separated-values
+ 	icon_filename=i-spreadsheet
+ 	default_action_type=application
+ 	default_application_id=libreoffice,openoffice
+-	short_list_application_ids_for_novice_user_level=libreoffice,openoffice,gnumeric,kspread
+-	short_list_application_ids_for_intermediate_user_level=libreoffice,openoffice,gnumeric,kspread
+-	short_list_application_ids_for_advanced_user_level=libreoffice,openoffice,gnumeric,kspread
++	short_list_application_ids_for_novice_user_level=xdg-open,libreoffice,openoffice,gnumeric,kspread
++	short_list_application_ids_for_intermediate_user_level=xdg-open,libreoffice,openoffice,gnumeric,kspread
++	short_list_application_ids_for_advanced_user_level=xdg-open,libreoffice,openoffice,gnumeric,kspread
+ 	_category=Documents/Spreadsheet
+ 	use_category_default=yes
+ 
+@@ -2072,18 +2072,18 @@ text/x-install
+ text/x-java
+ 	_description=Java source code
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=anjuta,javac
+-	short_list_application_ids_for_intermediate_user_level=anjuta,javac
+-	short_list_application_ids_for_advanced_user_level=anjuta,javac
++	short_list_application_ids_for_novice_user_level=xdg-open,anjuta,javac
++	short_list_application_ids_for_intermediate_user_level=xdg-open,anjuta,javac
++	short_list_application_ids_for_advanced_user_level=xdg-open,anjuta,javac
+ 	_category=Software Development/Source Code
+ 	use_category_default=yes
+ 
+ text/x-javascript
+ 	_description=JavaScript source code
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=anjuta
+-	short_list_application_ids_for_intermediate_user_level=anjuta
+-	short_list_application_ids_for_advanced_user_level=anjuta
++	short_list_application_ids_for_novice_user_level=xdg-open,anjuta
++	short_list_application_ids_for_intermediate_user_level=xdg-open,anjuta
++	short_list_application_ids_for_advanced_user_level=xdg-open,anjuta
+ 	_category=Software Development/Source Code
+ 	use_category_default=yes
+ 
+@@ -2206,17 +2206,17 @@ text/x-troff-ms
+ text/x-vcalendar
+ 	_description=Calendar or event document
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=gnomecal
+-	short_list_application_ids_for_intermediate_user_level=gnomecal
+-	short_list_application_ids_for_advanced_user_level=gnomecal
++	short_list_application_ids_for_novice_user_level=xdg-open,gnomecal
++	short_list_application_ids_for_intermediate_user_level=xdg-open,gnomecal
++	short_list_application_ids_for_advanced_user_level=xdg-open,gnomecal
+ 	_category=Information/Calendar
+ 
+ text/x-vcard
+ 	_description=Address card
+ 	default_action_type=application
+-	short_list_application_ids_for_novice_user_level=gnomecard
+-	short_list_application_ids_for_intermediate_user_level=gnomecard
+-	short_list_application_ids_for_advanced_user_level=gnomecard
++	short_list_application_ids_for_novice_user_level=xdg-open,gnomecard
++	short_list_application_ids_for_intermediate_user_level=xdg-open,gnomecard
++	short_list_application_ids_for_advanced_user_level=xdg-open,gnomecard
+ 	_category=Information
+ 
+ text/x-verilog-src
+@@ -2240,9 +2240,9 @@ text/xml
+ 	short_list_component_iids_for_novice_user_level=OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+-	short_list_application_ids_for_novice_user_level=epiphany,galeon,mozilla
+-	short_list_application_ids_for_intermediate_user_level=epiphany,galeon,mozilla
+-	short_list_application_ids_for_advanced_user_level=epiphany,galeon,mozilla
++	short_list_application_ids_for_novice_user_level=xdg-open,epiphany,galeon,mozilla
++	short_list_application_ids_for_intermediate_user_level=xdg-open,epiphany,galeon,mozilla
++	short_list_application_ids_for_advanced_user_level=xdg-open,epiphany,galeon,mozilla
+ 	_category=Documents/Extended Markup Language (XML)
+ 	use_category_default=yes
+ 
+@@ -2258,9 +2258,9 @@ video/mpeg
+ 	_description=MPEG video
+ 	default_action_type=application
+ 	default_application_id=totem
+-	short_list_application_ids_for_novice_user_level=totem,Xine,MPlayer,vlc,plaympeg,omsomi,mpeg_play,gtv
+-	short_list_application_ids_for_intermediate_user_level=totem,Xine,MPlayer,vlc,plaympeg,omsomi,mpeg_play,gtv
+-	short_list_application_ids_for_advanced_user_level=totem,Xine,MPlayer,vlc,plaympeg,omsomi,mpeg_play,gtv
++	short_list_application_ids_for_novice_user_level=xdg-open,totem,Xine,MPlayer,vlc,plaympeg,omsomi,mpeg_play,gtv
++	short_list_application_ids_for_intermediate_user_level=xdg-open,totem,Xine,MPlayer,vlc,plaympeg,omsomi,mpeg_play,gtv
++	short_list_application_ids_for_advanced_user_level=xdg-open,totem,Xine,MPlayer,vlc,plaympeg,omsomi,mpeg_play,gtv
+ 	_category=Video
+ 
+ video/msvideo
+@@ -2268,17 +2268,17 @@ video/msvideo
+ 	icon_filename=gnome-video-x-msvideo
+ 	default_action_type=application
+ 	default_application_id=totem
+-	short_list_application_ids_for_novice_user_level=totem,Xine,MPlayer,omsomi,gtv
+-	short_list_application_ids_for_intermediate_user_level=totem,Xine,MPlayer,omsomi,gtv
++	short_list_application_ids_for_novice_user_level=xdg-open,totem,Xine,MPlayer,omsomi,gtv
++	short_list_application_ids_for_intermediate_user_level=xdg-open,totem,Xine,MPlayer,omsomi,gtv
+ 	_category=Video
+ 
+ video/quicktime
+ 	_description=QuickTime movie
+ 	default_action_type=application
+ 	default_application_id=totem
+-	short_list_application_ids_for_novice_user_level=totem,Xine,MPlayer
+-	short_list_application_ids_for_intermediate_user_level=totem,Xine,MPlayer
+-	short_list_application_ids_for_advanced_user_level=totem,Xine,MPlayer
++	short_list_application_ids_for_novice_user_level=xdg-open,totem,Xine,MPlayer
++	short_list_application_ids_for_intermediate_user_level=xdg-open,totem,Xine,MPlayer
++	short_list_application_ids_for_advanced_user_level=xdg-open,totem,Xine,MPlayer
+ 
+ 	_category=Video
+ 
+@@ -2302,9 +2302,9 @@ video/x-avi
+ 	_description=AVI video
+ 	default_action_type=application
+ 	default_application_id=totem
+-	short_list_application_ids_for_novice_user_level=totem,Xine,MPlayer
+-	short_list_application_ids_for_intermediate_user_level=totem,Xine,MPlayer
+-	short_list_application_ids_for_advanced_user_level=totem,Xine,MPlayer
++	short_list_application_ids_for_novice_user_level=xdg-open,totem,Xine,MPlayer
++	short_list_application_ids_for_intermediate_user_level=xdg-open,totem,Xine,MPlayer
++	short_list_application_ids_for_advanced_user_level=xdg-open,totem,Xine,MPlayer
+ 	_category=Video
+ 
+ video/x-flc
+@@ -2333,9 +2333,9 @@ video/x-msvideo
+ 	_description=Microsoft video
+ 	default_action_type=application
+ 	default_application_id=totem
+-	short_list_application_ids_for_novice_user_level=totem,Xine,MPlayer,omsomi
+-	short_list_application_ids_for_intermediate_user_level=totem,Xine,MPlayer,omsomi
+-	short_list_application_ids_for_advanced_user_level=totem,Xine,MPlayer,omsomi
++	short_list_application_ids_for_novice_user_level=xdg-open,totem,Xine,MPlayer,omsomi
++	short_list_application_ids_for_intermediate_user_level=xdg-open,totem,Xine,MPlayer,omsomi
++	short_list_application_ids_for_advanced_user_level=xdg-open,totem,Xine,MPlayer,omsomi
+ 	_category=Video
+ 
+ video/x-nsv
+@@ -2346,9 +2346,9 @@ video/x-real-video
+ 	_description=RealVideo video
+ 	default_action_type=application
+ 	default_application_id=totem
+-	short_list_application_ids_for_novice_user_level=totem,realplayer
+-	short_list_application_ids_for_intermediate_user_level=totem,realplayer
+-	short_list_application_ids_for_advanced_user_level=totem,realplayer
++	short_list_application_ids_for_novice_user_level=xdg-open,totem,realplayer
++	short_list_application_ids_for_intermediate_user_level=xdg-open,totem,realplayer
++	short_list_application_ids_for_advanced_user_level=xdg-open,totem,realplayer
+ 	_category=Video
+ 
+ video/x-sgi-movie
+@@ -2397,9 +2397,9 @@ x-directory/webdav
+ 	short_list_component_iids_for_novice_user_level=OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_file_manager_icon_view:42681b21-d5ca-4837-87d2-394d88ecc058,OAFIID:nautilus_file_manager_list_view:521e489d-0662-4ad7-ac3a-832deabe111c,OAFIID:Nautilus_Audio_View:9456b5d2-60a8-407f-a56e-d561e1821391,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_file_manager_icon_view:42681b21-d5ca-4837-87d2-394d88ecc058,OAFIID:nautilus_file_manager_list_view:521e489d-0662-4ad7-ac3a-832deabe111c,OAFIID:Nautilus_Audio_View:9456b5d2-60a8-407f-a56e-d561e1821391,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_file_manager_icon_view:42681b21-d5ca-4837-87d2-394d88ecc058,OAFIID:nautilus_file_manager_list_view:521e489d-0662-4ad7-ac3a-832deabe111c,OAFIID:Nautilus_Audio_View:9456b5d2-60a8-407f-a56e-d561e1821391,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+-	short_list_application_ids_for_novice_user_level=mozilla
+-	short_list_application_ids_for_intermediate_user_level=mozilla
+-	short_list_application_ids_for_advanced_user_level=mozilla
++	short_list_application_ids_for_novice_user_level=xdg-open,mozilla
++	short_list_application_ids_for_intermediate_user_level=xdg-open,mozilla
++	short_list_application_ids_for_advanced_user_level=xdg-open,mozilla
+ 	_category=System
+ 
+ #
+@@ -2416,9 +2416,9 @@ x-directory/webdav-prefer-directory
+ 	short_list_component_iids_for_novice_user_level=OAFIID:nautilus_file_manager_icon_view:42681b21-d5ca-4837-87d2-394d88ecc058,OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_file_manager_list_view:521e489d-0662-4ad7-ac3a-832deabe111c,OAFIID:Nautilus_Audio_View:9456b5d2-60a8-407f-a56e-d561e1821391,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_intermediate_user_level=OAFIID:nautilus_file_manager_icon_view:42681b21-d5ca-4837-87d2-394d88ecc058,OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_file_manager_list_view:521e489d-0662-4ad7-ac3a-832deabe111c,OAFIID:Nautilus_Audio_View:9456b5d2-60a8-407f-a56e-d561e1821391,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+ 	short_list_component_iids_for_advanced_user_level=OAFIID:nautilus_file_manager_icon_view:42681b21-d5ca-4837-87d2-394d88ecc058,OAFIID:nautilus_mozilla_content_view:1ee70717-57bf-4079-aae5-922abdd576b1,OAFIID:nautilus_file_manager_list_view:521e489d-0662-4ad7-ac3a-832deabe111c,OAFIID:Nautilus_Audio_View:9456b5d2-60a8-407f-a56e-d561e1821391,OAFIID:nautilus_text_view:fa466311-17c1-435c-8231-c9fc434b6437
+-	short_list_application_ids_for_novice_user_level=mozilla
+-	short_list_application_ids_for_intermediate_user_level=mozilla
+-	short_list_application_ids_for_advanced_user_level=mozilla
++	short_list_application_ids_for_novice_user_level=xdg-open,mozilla
++	short_list_application_ids_for_intermediate_user_level=xdg-open,mozilla
++	short_list_application_ids_for_advanced_user_level=xdg-open,mozilla
+ 	_category=System
+ 
+ x-special/device-block
