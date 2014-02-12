@@ -36,8 +36,6 @@ Requires:	%{name} = %{version}-%{release}
 The pkgconfig for %{name}.
 
 %prep
-
-%prep
 %setup -q
 %apply_patches
 
