@@ -3,7 +3,7 @@
 Summary:	The GNOME virtual file-system libraries
 Name:		gnome-mime-data
 Version:	2.18.0
-Release:	18
+Release:	19
 License:	GPLv2+
 Group:		System/Libraries
 Url:		http://www.gnome.org/
