@@ -6,7 +6,7 @@ Version:	2.18.0
 Release:	21
 License:	GPLv2+
 Group:		System/Libraries
-Url:		http://www.gnome.org/
+Url:		https://www.gnome.org/
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-mime-data/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildArch:	noarch
 # (fc) 2.3.2-1mdk fix default html viewer
