@@ -21,6 +21,11 @@ Patch3:		gnome-mime-data-2.18.0-gdesklet.patch
 Patch4:		gnome-mime-data-2.18.0-libreoffice.patch
 # Use xdg-open for mostly anything so KDE users get their preferred application too
 Patch5:		gnome-mime-data-2.18.0-xdg-open.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	perl-XML-Parser
 
 %description
