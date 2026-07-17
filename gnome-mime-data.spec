@@ -27,6 +27,7 @@ BuildRequires:	libtool-base
 BuildRequires:	slibtool
 BuildRequires:	make
 BuildRequires:	perl-XML-Parser
+BuildRequires:  gettext
 
 %description
 The GNOME MIME database contains a basic set of applications and MIME
